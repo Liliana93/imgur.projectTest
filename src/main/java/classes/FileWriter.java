@@ -20,6 +20,4 @@ public class FileWriter {
             e.printStackTrace();
         }
     }
-
-
 }
