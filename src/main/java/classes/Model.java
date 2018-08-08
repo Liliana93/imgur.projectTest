@@ -1,8 +1,5 @@
 package classes;
 
-/**
- * Created by Liliana on 18.07.2018.
- */
 public class Model {
     private String userId;
     private String id;
@@ -48,4 +45,9 @@ public class Model {
     public String getBody() {
         return body;
     }
+
+    public String toString() {
+        return this.userId + " " + this.id + " " + this.title + " " + this.body;
+    }
+
 }

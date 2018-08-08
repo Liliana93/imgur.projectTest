@@ -1,0 +1,4 @@
+01:12:30.871 [main] INFO  steps.Stepdef - Making a Get request
+
+01:12:34.988 [main] INFO  steps.Stepdef - Response code is 200
+

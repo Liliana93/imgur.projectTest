@@ -5,8 +5,7 @@ import java.util.Map;
 
 public class FlickrItem {
 
-
-    private FlickrItem [] items;
+    private FlickrItem[] items;
     private String title;
     private URI link;
     private Map<String, URI> media;
@@ -30,7 +29,9 @@ public class FlickrItem {
         this.tags = tags;
     }
 
-    public FlickrItem(){}
+    public FlickrItem() {
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -66,6 +67,7 @@ public class FlickrItem {
     public void setTags(String tags) {
         this.tags = tags;
     }
+
     public void setItems(FlickrItem[] items) {
         this.items = items;
     }
@@ -105,6 +107,7 @@ public class FlickrItem {
     public String getTags() {
         return tags;
     }
+
     public FlickrItem[] getItems() {
         return items;
     }
