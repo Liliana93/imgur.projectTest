@@ -2,9 +2,9 @@ import classes.FileWriter;
 import classes.FlickrItem;
 import classes.RestAPIHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -15,40 +15,30 @@ import java.util.List;
 import java.util.Properties;
 
 
-public class FlickrTest1 {
+public class GetRequestTest {
     public Properties prop;
+
     @BeforeTest
     public void before() throws IOException {
         prop = new Properties();
-        FileInputStream dataFile = new FileInputStream("C:\\imgur.project\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
         prop.load(dataFile);
-     // RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
-      RestAssured.baseURI = prop.getProperty("jsonplaceholderUrl");
+        RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
     }
+
+
     @Test
-    public void test() throws IOException {
-       Response response = RestAPIHandler.getRequest(prop.getProperty("flickrpath"));
-        RestAPIHandler.setCode(200);
-        RestAPIHandler.assertResponseCode();
+    public void testGetRequest() throws IOException {
+      Response response = RestAPIHandler.sendGetRequest(prop.getProperty("flickrpath"));
+        Assert.assertEquals(response.getStatusCode(), 200, "Incorrect status code returned");
         FileWriter.writeToFile(prop.getProperty("filenameget"), response.asString());
+
         List<String> jsonResponse = response.jsonPath().getList("items");
         System.out.println(jsonResponse.size());
         String item = response.jsonPath().getString("items[0]");
         System.out.println(item);
         String title = response.jsonPath().getString("items[0].title");
         System.out.println("Title of the first item is: " + title);
-
-
-
-      /*  classes.Model model = new classes.Model("21","24", "this is a POST request", "this is REST-Assured Tutorial");
-        JSONObject requestParams = new JSONObject();
-        requestParams.put("id", model.getId());
-        requestParams.put("title", model.getTitle());
-        requestParams.put("body", model.getBody());
-        Response response = classes.RestAPIHandler.postRequest("/posts/", requestParams);
-        classes.RestAPIHandler.setCode(201);
-        classes.RestAPIHandler.assertResponseCode();
-        classes.FileWriter.writeToFile(prop.getProperty("filenamepost"), response.asString());*/
 
         ObjectMapper mapper = new ObjectMapper();
         try{
@@ -61,7 +51,8 @@ public class FlickrTest1 {
         System.out.println(item1.getTitle());
 
     }
-    private static  void printItem(FlickrItem flickitem){
+
+    private static void printItem(FlickrItem flickitem) {
         System.out.println("Item title: " + flickitem.getTitle());
         System.out.println("Item link: " + flickitem.getLink());
         System.out.println("Media: " + flickitem.getMedia());
@@ -73,7 +64,7 @@ public class FlickrTest1 {
         System.out.println("Tags: " + flickitem.getTags());
     }
 
-    private static void printItems(FlickrItem [] items) {
+    private static void printItems(FlickrItem[] items) {
         System.out.println("Items: ");
         System.out.println();
         for (FlickrItem flickrItem : items) {
@@ -83,9 +74,8 @@ public class FlickrTest1 {
         }
 
     }
-        private static void printParsedItems(FlickrItem flickrItem){
-            printItems(flickrItem.getItems());
-    }
-    }
 
-
+    private static void printParsedItems(FlickrItem flickrItem) {
+        printItems(flickrItem.getItems());
+    }
+}
