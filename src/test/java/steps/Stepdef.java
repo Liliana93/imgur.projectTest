@@ -1,9 +1,6 @@
 package steps;
 
-import context.Context;
-import context.ScenarioContext;
 import cucumber.api.PendingException;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
@@ -17,7 +14,6 @@ import classes.RestAPIHandler;
 import org.apache.logging.log4j.Logger;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
