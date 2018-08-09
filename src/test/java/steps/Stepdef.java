@@ -1,6 +1,9 @@
 package steps;
 
+import context.Context;
+import context.ScenarioContext;
 import cucumber.api.PendingException;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
