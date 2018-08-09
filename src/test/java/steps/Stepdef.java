@@ -1,5 +1,7 @@
 package steps;
 
+import context.Context;
+import context.ScenarioContext;
 import cucumber.api.PendingException;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -20,10 +22,11 @@ import java.util.Properties;
 
 
 public class Stepdef {
-    public static Response response;
+//    public static Response response;
     public static RequestSpecification httpRequest;
     public Properties prop;
     public static Logger log = LogManager.getLogger(Stepdef.class.getName());
+    ScenarioContext scenarioContext;
 
     @Before()
     public void init() throws IOException {
@@ -61,11 +64,13 @@ public class Stepdef {
     @Given("^user makes a Get Request$")
     public void userMakesAGetRequest() throws Throwable {
         log.info("Making a Get request");
-        response = RestAPIHandler.sendGetRequest(prop.getProperty("flickrpath"));
-    }
+        Response response = RestAPIHandler.sendGetRequest(prop.getProperty("flickrpath"));
+        scenarioContext.setContext(Context.RESPONSE, response);
+}
 
     @Then("^Response Code should be (\\d+)$")
     public void responseCodeShouldBe(int code) throws Throwable {
+        Response response = (Response)scenarioContext.getContext(Context.RESPONSE);
         int responseStatusCode = response.getStatusCode();
         Assert.assertEquals(responseStatusCode, code, "Incorrect status code returned");
         log.info("Response code is 200");
