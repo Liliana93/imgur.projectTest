@@ -1,13 +1,5 @@
 package steps;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.testng.Assert;
-
 import classes.RestAPIHandler;
 import context.Context;
 import context.ScenarioContext;
@@ -16,13 +8,19 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 
 public class Stepdef {
-
     public Properties prop;
-
     public static Logger log = LogManager.getLogger(Stepdef.class.getName());
-
     private ScenarioContext scenarioContext;
 
     public Stepdef(ScenarioContext scenarioContext) {
@@ -32,7 +30,7 @@ public class Stepdef {
     @Before()
     public void init() throws IOException {
         prop = new Properties();
-        FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\copy3\\imgur.projectTest\\src\\main\\resources\\data.properties");
         prop.load(dataFile);
         RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
     }
@@ -51,5 +49,6 @@ public class Stepdef {
         Assert.assertEquals(responseStatusCode, code, "Incorrect status code returned");
         log.info("Response code is 200");
     }
+
 
 }
