@@ -30,7 +30,7 @@ public class Stepdef {
     @Before()
     public void init() throws IOException {
         prop = new Properties();
-        FileInputStream dataFile = new FileInputStream("C:\\copy3\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
         prop.load(dataFile);
         RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
     }

@@ -23,18 +23,19 @@ public class WebdriverSteps {
     @Before()
     public WebDriver initializeDriver() throws IOException {
         prop = new Properties();
-        FileInputStream dataFile = new FileInputStream("C:\\copy3\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
+
         prop.load(dataFile);
         RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
         String browserName = prop.getProperty("browser");
         System.out.println(browserName);
 
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Soft\\Webdriver\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Webdriver\\chromedriver.exe");
             driver = new ChromeDriver();
 
         } else if (browserName.equals("firefox")) {
-            System.setProperty("webdriver.gecko.driver", "C:\\Soft\\Webdriver\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "C:\\Webdriver\\geckodriver.exe");
             driver = new FirefoxDriver();
         } else if (browserName.equals("IE")) {
 
