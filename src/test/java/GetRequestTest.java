@@ -21,7 +21,8 @@ public class GetRequestTest {
     @BeforeTest
     public void before() throws IOException {
         prop = new Properties();
-        FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        // FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\imgur update\\imgur.projectTest\\src\\main\\resources\\data.properties");
         prop.load(dataFile);
         RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
     }
@@ -29,7 +30,7 @@ public class GetRequestTest {
 
     @Test
     public void testGetRequest() throws IOException {
-      Response response = RestAPIHandler.sendGetRequest(prop.getProperty("flickrpath"));
+        Response response = RestAPIHandler.sendGetRequest(prop.getProperty("flickrpath"));
         Assert.assertEquals(response.getStatusCode(), 200, "Incorrect status code returned");
         FileWriter.writeToFile(prop.getProperty("filenameget"), response.asString());
 
@@ -41,13 +42,13 @@ public class GetRequestTest {
         System.out.println("Title of the first item is: " + title);
 
         ObjectMapper mapper = new ObjectMapper();
-        try{
+        try {
             FlickrItem flickrItem = mapper.readValue(new File(prop.getProperty("filenameget")), FlickrItem.class);
             printParsedItems(flickrItem);
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        FlickrItem item1 = mapper.readValue( "{\"title\": \"Pineapple_0232\"}", FlickrItem.class);
+        FlickrItem item1 = mapper.readValue("{\"title\": \"Pineapple_0232\"}", FlickrItem.class);
         System.out.println(item1.getTitle());
 
     }

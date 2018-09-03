@@ -23,4 +23,10 @@ public class ScenarioContext {
     public Boolean isContains(Context key) {
         return scenarioContext.containsKey(key.toString());
     }
+
+    public enum Context {
+        Response,
+        webDriver;
+    }
+
 }
