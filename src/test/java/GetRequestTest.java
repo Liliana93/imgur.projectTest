@@ -21,8 +21,7 @@ public class GetRequestTest {
     @BeforeTest
     public void before() throws IOException {
         prop = new Properties();
-        // FileInputStream dataFile = new FileInputStream("C:\\FlickrApiProject\\imgur.projectTest\\src\\main\\resources\\data.properties");
-        FileInputStream dataFile = new FileInputStream("C:\\imgur update\\imgur.projectTest\\src\\main\\resources\\data.properties");
+        FileInputStream dataFile = new FileInputStream("C:\\Imgur\\imgur.projectTest\\src\\main\\resources\\data.properties");
         prop.load(dataFile);
         RestAssured.baseURI = prop.getProperty("flickrbaseUrl");
     }

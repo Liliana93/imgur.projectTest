@@ -1,9 +1,6 @@
 package steps;
 
-/**
- * Created by Liliana on 04.09.2018.
- */
-public class FirefoxDriver extends AbstractDriver{
+public class FirefoxDriver extends AbstractDriver {
 
     @Override
     protected void createDriver() {
