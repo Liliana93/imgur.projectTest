@@ -1,9 +1,12 @@
 package steps;
 
+import static steps.Stephooks.prop;
+
 public class ChromeDriver extends AbstractDriver {
+
     @Override
     protected void createDriver() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Soft\\Webdriver\\chromedriver.exe");
+        prop.getProperty("webdriver.chrome.driver");
         driver = new org.openqa.selenium.chrome.ChromeDriver();
     }
 }

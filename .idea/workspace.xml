@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c5b2d7c9-89b9-4178-b5f2-c8435b134dee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/imgur.project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/imgur.project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/imgur.project_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/imgur.project_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/imgur.project_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/imgur.project_test.iml" afterDir="false" />
+    <list default="true" id="c5b2d7c9-89b9-4178-b5f2-c8435b134dee" name="Default" comment="refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GetRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GetRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostRequestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostRequestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AbstractDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AbstractDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Drivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Drivers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Stephooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Stephooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/UISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/UISteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/SuccessfulRequest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/SuccessfulAPIRequest.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UITest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UITest.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -68,27 +53,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="feature" value="4" />
-          <entry key="java" value="39" />
+          <entry key="feature" value="7" />
+          <entry key="java" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Cucumber" value="4" />
-          <entry key="JAVA" value="39" />
+          <entry key="Cucumber" value="7" />
+          <entry key="JAVA" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="feature" value="3" />
-          <entry key="java" value="105" />
+          <entry key="java" value="124" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cucumber" value="3" />
-          <entry key="JAVA" value="105" />
+          <entry key="JAVA" value="124" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -96,23 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/Stephooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,10 +94,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/UITest.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PostRequestTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state relative-caret-position="82">
+              <caret line="23" column="123" selection-start-line="23" selection-start-column="123" selection-end-line="23" selection-end-column="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/SuccessfulAPIRequest.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -501,15 +483,15 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/SuccessfulRequest.feature" />
         <option value="$PROJECT_DIR$/src/test/java/GetRequestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PostRequestTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/AbstractDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/DriverFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/Drivers.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/UISteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/Stephooks.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/SuccessfulAPIRequest.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/UITest.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" />
       </list>
     </option>
@@ -594,7 +576,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536059843476" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536060654580" />
     <property name="last_opened_file_path" value="C:/iconsolution/repo3/ipf-hcti-scheme" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -666,7 +648,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: SuccessfulRequest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: UITest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <module name="imgur.project_test" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
       <extension name="coverage">
@@ -780,19 +762,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Feature: SuccessfulRequest" />
       <item itemvalue="TestNG.TestRunner" />
       <item itemvalue="Cucumber java.Feature: SuccessfulAPIRequest" />
       <item itemvalue="Cucumber java.Scenario: Successful Get Request" />
       <item itemvalue="Cucumber java.Scenario: Access youTube page" />
+      <item itemvalue="Cucumber java.Feature: UITest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber java.Feature: UITest" />
         <item itemvalue="Cucumber java.Scenario: Access youTube page" />
         <item itemvalue="Cucumber java.Scenario: Successful Get Request" />
         <item itemvalue="Cucumber java.Feature: SuccessfulAPIRequest" />
-        <item itemvalue="Cucumber java.Feature: SuccessfulRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -814,25 +796,17 @@
       <option name="project" value="LOCAL" />
       <updated>1536014953192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactoring">
+      <created>1536059882929</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536059882929</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PostRequestTest - 2018.09.04 at 13h 41m 22s.xml">
-      <configuration name="PostRequestTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.09.04 at 13h 43m 59s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.09.04 at 13h 44m 40s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.09.04 at 13h 45m 53s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestRunner - 2018.09.04 at 13h 52m 16s.xml">
-      <configuration name="TestRunner" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestRunner - 2018.09.04 at 13h 52m 52s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
@@ -848,12 +822,26 @@
     <history-entry file="TestRunner - 2018.09.04 at 14h 10m 38s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="TestRunner - 2018.09.04 at 14h 14m 07s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.09.04 at 14h 14m 44s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.09.04 at 14h 19m 39s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.09.04 at 14h 20m 45s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2018.09.04 at 14h 22m 58s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27364865" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27364865" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -865,7 +853,7 @@
       <window_info anchor="bottom" id="Tail" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3757764" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19254659" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -991,33 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/APISteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PostRequestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="123" selection-start-line="23" selection-start-column="123" selection-end-line="23" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GetRequestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/AbstractDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1025,24 +986,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/APISteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Drivers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="22">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,9 +1003,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Drivers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/UISteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
+        <state relative-caret-position="151">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1063,20 +1020,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Stephooks.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/GetRequestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="-908">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SuccessfulAPIRequest.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1087,10 +1037,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/FirefoxDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ChromeDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/Stephooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PostRequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="23" column="123" selection-start-line="23" selection-start-column="123" selection-end-line="23" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/SuccessfulAPIRequest.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
