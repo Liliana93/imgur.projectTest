@@ -1,4 +1,4 @@
-package steps;
+package driver;
 
 public enum Drivers {
     CHROME,

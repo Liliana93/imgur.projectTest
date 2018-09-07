@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="imgur.project_main" target="8" />
-      <module name="imgur.project_test" target="8" />
+      <module name="imgur.project_main" target="1.8" />
+      <module name="imgur.project_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

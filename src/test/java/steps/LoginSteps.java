@@ -1,17 +1,22 @@
 package steps;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.When;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import pages.LoginPage;
 
 import static steps.Stephooks.driver;
 import static steps.Stephooks.prop;
 
 public class LoginSteps {
+
     public static Logger log = LogManager.getLogger(APISteps.class.getName());
+
     LoginPage lp;
 
     @Given("^user accesses the Login Page$")
@@ -34,5 +39,12 @@ public class LoginSteps {
     public void clicksOnSubmitButton() throws Throwable {
         lp.Login();
         log.info("User has clicked on submit button");
+    }
+
+    @Then("^user is logged in$")
+    public void chechIfLoggedIn() throws Throwable {
+        driver.get("https://mail.google.com/mail");
+        Assert.assertTrue(lp.IsLoggedIn(), "User is not logged in");
+        Thread.sleep(1000);
     }
 }
