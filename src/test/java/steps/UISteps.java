@@ -1,10 +1,11 @@
 package steps;
 
-import context.ScenarioContext;
-import cucumber.api.java.en.Given;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+
+import context.ScenarioContext;
+import cucumber.api.java.en.Given;
 
 import static steps.Stephooks.driver;
 import static steps.Stephooks.prop;
@@ -12,6 +13,7 @@ import static steps.Stephooks.prop;
 public class UISteps {
 
     public static Logger log = LogManager.getLogger(APISteps.class.getName());
+
     private ScenarioContext scenarioContext;
 
     public UISteps(ScenarioContext scenarioContext) {
